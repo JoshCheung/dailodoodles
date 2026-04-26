@@ -1,10 +1,14 @@
 import { useParams, Link } from 'react-router-dom';
+import { useState } from 'react';
 import { stickers } from '../data/stickers';
 import styles from './StickerDetail.module.css';
 
 export default function StickerDetail() {
   const { id } = useParams();
   const sticker = stickers.find((s) => s.id === id);
+
+  const images = sticker?.images?.length ? sticker.images : sticker ? [sticker.image] : [];
+  const [activeImg, setActiveImg] = useState(0);
 
   if (!sticker) {
     return (
@@ -19,14 +23,35 @@ export default function StickerDetail() {
     <main className={styles.page}>
       <Link to="/" className={styles.back}>← Back to shop</Link>
       <div className={styles.layout}>
-        <div className={styles.imageWrapper}>
-          <img
-            src={sticker.image}
-            alt={sticker.name}
-            className={styles.image}
-            onError={(e) => { e.target.src = '/stickers/placeholder.png'; }}
-          />
-        </div>
+        <div className={styles.imageSection}>
+          <div className={styles.imageWrapper}>
+            <img
+              src={images[activeImg]}
+              alt={sticker.name}
+              className={styles.image}
+              onError={(e) => { e.target.src = '/stickers/placeholder.png'; }}
+            />
+          </div>
+          {images.length > 1 && (
+            <div className={styles.thumbnails}>
+              {images.map((src, i) => (
+                <button
+                  key={i}
+                  className={i === activeImg ? styles.thumbActive : styles.thumb}
+                  onClick={() => setActiveImg(i)}
+                  aria-label={`View image ${i + 1}`}
+                >
+                  <img
+                    src={src}
+                    alt=""
+                    className={styles.thumbImg}
+                    onError={(e) => { e.target.src = '/stickers/placeholder.png'; }}
+                  />
+                </button>
+              ))}
+            </div>
+          )}
+        </div>  {/* end imageSection */}
         <div className={styles.details}>
           <h1 className={styles.name}>{sticker.name}</h1>
           <p className={styles.price}>${sticker.price.toFixed(2)}</p>

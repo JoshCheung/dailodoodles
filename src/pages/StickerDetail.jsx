@@ -28,7 +28,7 @@ export default function StickerDetail() {
             <img
               src={images[activeImg]}
               alt={sticker.name}
-              className={styles.image}
+              className={styles.selectedImage}
               onError={(e) => { e.target.src = '/stickers/placeholder.png'; }}
             />
           </div>

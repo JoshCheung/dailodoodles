@@ -12,20 +12,20 @@ const FAQS = [
   },
   {
     q: "Are the stickers die-cut?",
-    a: "Yes! All stickers are die-cut to the shape of the design — no big white rectangles.",
+    a: "Yes! Most stickers are die-cut to the shape of the design, but a few are not for good reason hehe",
   },
-  {
-    q: "How do I place an order?",
-    a: "Head to our Custom Order page and fill out the Google Form, or DM us on Instagram @dailo.doodles. We'll get back to you within a few days.",
-  },
-  {
-    q: "Do you do custom orders or bulk orders?",
-    a: "Yes! We love custom and bulk orders. Fill out the Custom Order form and tell us what you're thinking.",
-  },
-  {
-    q: "How long does shipping take?",
-    a: "See our Shipping page for current processing times and shipping options.",
-  },
+  // {
+  //   q: "How do I place an order?",
+  //   a: "Head to our Custom Order page and fill out the Google Form, or DM us on Instagram @dailo.doodles. We'll get back to you within a few days.",
+  // },
+  // {
+  //   q: "Do you do custom orders or bulk orders?",
+  //   a: "Yes! We love custom and bulk orders. Fill out the Custom Order form and tell us what you're thinking.",
+  // },
+  // {
+  //   q: "How long does shipping take?",
+  //   a: "See our Shipping page for current processing times and shipping options.",
+  // },
 ];
 
 export default function FAQ() {

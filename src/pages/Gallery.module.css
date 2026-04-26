@@ -28,7 +28,7 @@
   margin-bottom: var(--spacing-lg);
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1080px) {
   .masonry { columns: 3 180px; }
 }
 

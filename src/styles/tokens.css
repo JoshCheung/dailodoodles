@@ -1,0 +1,25 @@
+:root {
+  --color-bg: #fdf6f0;
+  --color-surface: #ffffff;
+  --color-primary: #f9a8c9;
+  --color-primary-dark: #e87fb0;
+  --color-accent: #a8d8ea;
+  --color-accent-dark: #7bbfd4;
+  --color-text: #3a3a3a;
+  --color-text-muted: #8a8a8a;
+  --color-border: #ede0d4;
+
+  --font-heading: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  --font-body: 'Segoe UI', system-ui, sans-serif;
+
+  --radius-card: 16px;
+  --radius-button: 24px;
+  --shadow-card: 0 2px 12px rgba(0, 0, 0, 0.08);
+  --shadow-card-hover: 0 6px 20px rgba(0, 0, 0, 0.13);
+
+  --spacing-xs: 4px;
+  --spacing-sm: 8px;
+  --spacing-md: 16px;
+  --spacing-lg: 24px;
+  --spacing-xl: 48px;
+}

@@ -12,14 +12,16 @@ export default function App() {
   return (
     <BrowserRouter>
       <Navbar />
-      <Routes>
-        <Route path="/" element={<Gallery />} />
-        <Route path="/sticker/:id" element={<StickerDetail />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/faq" element={<FAQ />} />
-        <Route path="/shipping" element={<Shipping />} />
-        <Route path="/custom-order" element={<CustomOrder />} />
-      </Routes>
+      <div style={{ flex: 1, display: 'flex', flexDirection: 'column' }}>
+        <Routes>
+          <Route path="/" element={<Gallery />} />
+          <Route path="/sticker/:id" element={<StickerDetail />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/faq" element={<FAQ />} />
+          {/* <Route path="/shipping" element={<Shipping />} /> */}
+          {/* <Route path="/custom-order" element={<CustomOrder />} /> */}
+        </Routes>
+      </div>
       <Footer />
     </BrowserRouter>
   );

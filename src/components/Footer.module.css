@@ -5,7 +5,7 @@
   padding: var(--spacing-lg) var(--spacing-xl);
   border-top: 1px solid var(--color-border);
   background: var(--color-surface);
-  margin-top: var(--spacing-xl);
+  margin-top: 0;
 }
 
 .copy {

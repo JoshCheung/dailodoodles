@@ -1,0 +1,124 @@
+.page {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: var(--spacing-lg) var(--spacing-xl);
+}
+
+.notFound {
+  text-align: center;
+  padding: var(--spacing-xl);
+}
+
+.back {
+  display: inline-block;
+  color: var(--color-text-muted);
+  text-decoration: none;
+  font-size: 0.9rem;
+  margin-bottom: var(--spacing-lg);
+  transition: color 0.2s;
+}
+
+.back:hover {
+  color: var(--color-primary-dark);
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--spacing-xl);
+  align-items: start;
+}
+
+@media (max-width: 600px) {
+  .layout { grid-template-columns: 1fr; }
+}
+
+.imageWrapper {
+  background: var(--color-bg);
+  border-radius: var(--radius-card);
+  padding: var(--spacing-xl);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image {
+  width: 100%;
+  max-width: 300px;
+  object-fit: contain;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+}
+
+.name {
+  font-family: var(--font-heading);
+  font-size: 2rem;
+  color: var(--color-text);
+}
+
+.price {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--color-primary-dark);
+}
+
+.size {
+  font-size: 0.9rem;
+  color: var(--color-text-muted);
+}
+
+.description {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--color-text);
+}
+
+.variants {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: var(--spacing-sm);
+}
+
+.variantLabel {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--color-text-muted);
+}
+
+.variantChip {
+  padding: var(--spacing-xs) var(--spacing-md);
+  border-radius: var(--radius-button);
+  border: 1px solid var(--color-border);
+  font-size: 0.85rem;
+  background: var(--color-surface);
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-sm);
+}
+
+.tag {
+  padding: var(--spacing-xs) var(--spacing-sm);
+  background: var(--color-accent);
+  border-radius: var(--radius-button);
+  font-size: 0.78rem;
+  color: var(--color-text);
+}
+
+.orderNote {
+  font-size: 0.9rem;
+  color: var(--color-text-muted);
+  margin-top: var(--spacing-sm);
+}
+
+.orderLink {
+  color: var(--color-primary-dark);
+  font-weight: 600;
+}

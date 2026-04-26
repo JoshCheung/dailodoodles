@@ -5,7 +5,8 @@ export default function Navbar() {
   return (
     <header className={styles.header}>
       <Link to="/" className={styles.logo}>
-        <img src="/stickers/Logo.png" alt="Dailo Doodles" className={styles.logoImg} />
+        <img src="/stickers/Logo.png" alt="" className={styles.logoImg} />
+        <span className={styles.logoText}>Dailo Doodles</span>
       </Link>
       <nav className={styles.nav}>
         <NavLink to="/" end className={({ isActive }) => isActive ? styles.activeLink : styles.link}>

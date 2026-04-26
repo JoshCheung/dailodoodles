@@ -17,9 +17,16 @@
 }
 
 .logoImg {
-  height: 80px;
+  height: 120px;
   width: auto;
   display: block;
+}
+
+.logoText {
+  font-family: var(--font-heading);
+  font-size: 1.6rem;
+  color: var(--color-primary-dark);
+  letter-spacing: 0.02em;
 }
 
 .nav {

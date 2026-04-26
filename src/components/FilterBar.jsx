@@ -2,16 +2,31 @@ import { ALL_TAGS, ALL_THEMES } from '../data/stickers';
 import styles from './FilterBar.module.css';
 
 export default function FilterBar({ search, onSearch, activeTag, onTagChange, activeTheme, onThemeChange }) {
+  const isFiltered = search !== '' || activeTag !== '' || activeTheme !== '';
+
+  function resetAll() {
+    onSearch('');
+    onTagChange('');
+    onThemeChange('');
+  }
+
   return (
     <div className={styles.bar}>
-      <input
-        type="search"
-        placeholder="Search stickers…"
-        value={search}
-        onChange={(e) => onSearch(e.target.value)}
-        className={styles.searchInput}
-        aria-label="Search stickers"
-      />
+      <div className={styles.searchRow}>
+        <input
+          type="search"
+          placeholder="Search stickers…"
+          value={search}
+          onChange={(e) => onSearch(e.target.value)}
+          className={styles.searchInput}
+          aria-label="Search stickers"
+        />
+        {isFiltered && (
+          <button className={styles.resetButton} onClick={resetAll}>
+            Clear filters ×
+          </button>
+        )}
+      </div>
       <div className={styles.filters}>
         <div className={styles.group}>
           <span className={styles.label}>Theme</span>

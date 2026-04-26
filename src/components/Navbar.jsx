@@ -1,29 +1,44 @@
-import { Link, NavLink } from 'react-router-dom';
+import { useState } from 'react';
+import { Link, NavLink, useLocation } from 'react-router-dom';
 import styles from './Navbar.module.css';
 
 export default function Navbar() {
+  const [menuOpen, setMenuOpen] = useState(false);
+  const location = useLocation();
+
+  // Close menu on navigation
+  function handleNavClick() {
+    setMenuOpen(false);
+  }
+
   return (
     <header className={styles.header}>
-      <Link to="/" className={styles.logo}>
+      <Link to="/" className={styles.logo} onClick={handleNavClick}>
         <img src="/stickers/Logo.png" alt="" className={styles.logoImg} />
         <span className={styles.logoText}>Dailo Doodles</span>
       </Link>
-      <nav className={styles.nav}>
-        <NavLink to="/" end className={({ isActive }) => isActive ? styles.activeLink : styles.link}>
+
+      <button
+        className={styles.hamburger}
+        onClick={() => setMenuOpen((o) => !o)}
+        aria-label={menuOpen ? 'Close menu' : 'Open menu'}
+        aria-expanded={menuOpen}
+      >
+        <span className={menuOpen ? styles.barTop_open : styles.barTop} />
+        <span className={menuOpen ? styles.barMid_open : styles.barMid} />
+        <span className={menuOpen ? styles.barBot_open : styles.barBot} />
+      </button>
+
+      <nav className={menuOpen ? styles.navOpen : styles.nav}>
+        <NavLink to="/" end className={({ isActive }) => isActive ? styles.activeLink : styles.link} onClick={handleNavClick}>
           Shop
         </NavLink>
-        <NavLink to="/about" className={({ isActive }) => isActive ? styles.activeLink : styles.link}>
+        <NavLink to="/about" className={({ isActive }) => isActive ? styles.activeLink : styles.link} onClick={handleNavClick}>
           About
         </NavLink>
-        <NavLink to="/faq" className={({ isActive }) => isActive ? styles.activeLink : styles.link}>
+        <NavLink to="/faq" className={({ isActive }) => isActive ? styles.activeLink : styles.link} onClick={handleNavClick}>
           FAQ
         </NavLink>
-        {/* <NavLink to="/shipping" className={({ isActive }) => isActive ? styles.activeLink : styles.link}>
-          Shipping
-        </NavLink>
-        <NavLink to="/custom-order" className={({ isActive }) => isActive ? styles.activeLink : styles.link}>
-          Custom Order
-        </NavLink> */}
       </nav>
     </header>
   );

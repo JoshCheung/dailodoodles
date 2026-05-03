@@ -13,7 +13,7 @@ export default function Navbar() {
 
   return (
     <header className={styles.header}>
-      <Link to="/shop" className={styles.logo} onClick={handleNavClick}>
+      <Link to="/dailodoodles/shop" className={styles.logo} onClick={handleNavClick}>
         <img src="https://res.cloudinary.com/dufsumsmb/image/upload/v1777843561/Stickers/Logo_ggybpc.png" alt="" className={styles.logoImg} />
         <span className={styles.logoText}>Dailo Doodles</span>
       </Link>
@@ -30,13 +30,13 @@ export default function Navbar() {
       </button>
 
       <nav className={menuOpen ? styles.navOpen : styles.nav}>
-        <NavLink to="/shop" end className={({ isActive }) => isActive ? styles.activeLink : styles.link} onClick={handleNavClick}>
+        <NavLink to="/dailodoodles/shop" end className={({ isActive }) => isActive ? styles.activeLink : styles.link} onClick={handleNavClick}>
           Shop
         </NavLink>
-        <NavLink to="/about" className={({ isActive }) => isActive ? styles.activeLink : styles.link} onClick={handleNavClick}>
+        <NavLink to="/dailodoodles/about" className={({ isActive }) => isActive ? styles.activeLink : styles.link} onClick={handleNavClick}>
           About
         </NavLink>
-        <NavLink to="/faq" className={({ isActive }) => isActive ? styles.activeLink : styles.link} onClick={handleNavClick}>
+        <NavLink to="/dailodoodles/faq" className={({ isActive }) => isActive ? styles.activeLink : styles.link} onClick={handleNavClick}>
           FAQ
         </NavLink>
       </nav>

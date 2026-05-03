@@ -14,14 +14,14 @@ export default function StickerDetail() {
     return (
       <main className={styles.notFound}>
         <p>Sticker not found.</p>
-        <Link to="/" className={styles.back}>← Back to shop</Link>
+        <Link to="/dailodoodles/shop" className={styles.back}>← Back to shop</Link>
       </main>
     );
   }
 
   return (
     <main className={styles.page}>
-      <Link to="/" className={styles.back}>← Back to shop</Link>
+      <Link to="/dailodoodles/shop" className={styles.back}>← Back to shop</Link>
       <div className={styles.layout}>
         <div className={styles.imageSection}>
           <div className={styles.imageWrapper}>

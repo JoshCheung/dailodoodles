@@ -15,7 +15,7 @@ export default function StickerCard({ sticker }) {
       </div>
       <div className={styles.info}>
         <h3 className={styles.name}>{sticker.name}</h3>
-        <p className={styles.size}>{sticker.size}</p>
+        {/* <p className={styles.size}>{sticker.size}</p> */}
         <p className={styles.price}>${sticker.price.toFixed(2)}</p>
       </div>
     </Link>

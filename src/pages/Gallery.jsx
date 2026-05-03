@@ -23,10 +23,10 @@ export default function Gallery() {
 
   return (
     <main>
-      <section className={styles.hero}>
+      {/* <section className={styles.hero}>
         <h1 className={styles.heroTitle}>Dailo Doodles</h1>
         <p className={styles.heroSub}>ABC-inspired stickers for your laptop, water bottle, and life.</p>
-      </section>
+      </section> */}
       <FilterBar
         search={search}
         onSearch={setSearch}

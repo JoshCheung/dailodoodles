@@ -13,7 +13,7 @@ export default function Navbar() {
 
   return (
     <header className={styles.header}>
-      <Link to="/" className={styles.logo} onClick={handleNavClick}>
+      <Link to="/shop" className={styles.logo} onClick={handleNavClick}>
         <img src="/stickers/Logo.png" alt="" className={styles.logoImg} />
         <span className={styles.logoText}>Dailo Doodles</span>
       </Link>
@@ -30,7 +30,7 @@ export default function Navbar() {
       </button>
 
       <nav className={menuOpen ? styles.navOpen : styles.nav}>
-        <NavLink to="/" end className={({ isActive }) => isActive ? styles.activeLink : styles.link} onClick={handleNavClick}>
+        <NavLink to="/shop" end className={({ isActive }) => isActive ? styles.activeLink : styles.link} onClick={handleNavClick}>
           Shop
         </NavLink>
         <NavLink to="/about" className={({ isActive }) => isActive ? styles.activeLink : styles.link} onClick={handleNavClick}>

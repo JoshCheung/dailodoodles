@@ -14,7 +14,7 @@ export default function App() {
       <Navbar />
       <div style={{ flex: 1, display: 'flex', flexDirection: 'column' }}>
         <Routes>
-          <Route path="/" element={<Gallery />} />
+          <Route path="/shop" element={<Gallery />} />
           <Route path="/sticker/:id" element={<StickerDetail />} />
           <Route path="/about" element={<About />} />
           <Route path="/faq" element={<FAQ />} />

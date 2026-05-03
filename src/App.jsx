@@ -10,7 +10,7 @@ import CustomOrder from './pages/CustomOrder';
 
 export default function App() {
   return (
-    <BrowserRouter basename="/dailo-doodles/">
+    <BrowserRouter basename="/dailodoodles/">
       <Navbar />
       <div style={{ flex: 1, display: 'flex', flexDirection: 'column' }}>
         <Routes>

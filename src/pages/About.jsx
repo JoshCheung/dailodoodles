@@ -6,13 +6,13 @@ export default function About() {
       <h1 className={styles.title}>About Dailo Doodles</h1>
       <div className={styles.content}>
         <p>
-          "Dailo" (大佬) is Cantonese for "big homie" — and that's exactly the energy we're bringing
+          "Dailo" (大佬) is Cantonese for "big homie"m, and that's exactly the energy we're bringing
           to your sticker collection. Dailo Doodles is an ABC-owned small shop making cute, meme-worthy
           stickers for anyone who grew up between two cultures.
         </p>
         <p>
           Our stickers celebrate the food, animals, traditions, and inside jokes that shaped the
-          American Born Chinese experience — from dim sum Sundays to mahjong nights. Each design is
+          American Born Chinese experience. Each design is
           hand-drawn and die-cut for maximum vibes.
         </p>
         <p>

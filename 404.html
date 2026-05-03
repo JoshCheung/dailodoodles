@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script>
+      // Redirect GitHub Pages 404s back to index.html, preserving the path
+      // so React Router can handle it client-side
+      const path = window.location.pathname.replace('/dailo-doodles', '') || '/';
+      window.location.replace(
+        '/dailo-doodles/?p=' + encodeURIComponent(path) + window.location.search
+      );
+    </script>
+  </head>
+</html>

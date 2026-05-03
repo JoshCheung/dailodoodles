@@ -14,7 +14,7 @@ export default function Navbar() {
   return (
     <header className={styles.header}>
       <Link to="/shop" className={styles.logo} onClick={handleNavClick}>
-        <img src="/stickers/Logo.png" alt="" className={styles.logoImg} />
+        <img src="https://res.cloudinary.com/dufsumsmb/image/upload/v1777843561/Stickers/Logo_ggybpc.png" alt="" className={styles.logoImg} />
         <span className={styles.logoText}>Dailo Doodles</span>
       </Link>
 

@@ -1,7 +1,7 @@
 export const stickers = [
   {
     id: "1",
-    name: "Bolo the Bun",
+    name: "Bolo Bro",
     description: "The bolo bao of your dreams. Perfectly golden, slightly chaotic.",
     price: 2.00,
     image: "https://res.cloudinary.com/dufsumsmb/image/upload/v1777843556/Stickers/bolo-the-bun_xueeiv.png",
@@ -16,7 +16,7 @@ export const stickers = [
   },
   {
     id: "2",
-    name: "Dan the Tat",
+    name: "Dana Tat",
     description: "Egg tart energy. Smooth, sweet, and always the first to go.",
     price: 2.00,
     image: "https://res.cloudinary.com/dufsumsmb/image/upload/v1777843555/Stickers/dan-the-tat_rgrezi.png",
@@ -44,7 +44,7 @@ export const stickers = [
     id: "4",
     name: "Dragon",
     description: "The most powerful sign in the zodiac. No notes.",
-    price: 3.50,
+    price: 3.00,
     image: "https://res.cloudinary.com/dufsumsmb/image/upload/v1777843557/Stickers/dragon_dl2hnr.png",
     tags: ["animals"],
     theme: "animals",
@@ -68,7 +68,7 @@ export const stickers = [
   },
   {
     id: "6",
-    name: "FBCT",
+    name: "Flower Bridge Corn Taxi",
     description: "For the culture. You know what it means.",
     price: 3.00,
     image: "https://res.cloudinary.com/dufsumsmb/image/upload/v1777843558/Stickers/fbct_h5tknj.png",
@@ -101,7 +101,7 @@ export const stickers = [
   },
   {
     id: "9",
-    name: "Hotdog Bao",
+    name: "Cheung Bao",
     description: "East meets West in the most delicious way possible.",
     price: 2.00,
     image: "https://res.cloudinary.com/dufsumsmb/image/upload/v1777843561/Stickers/hotdog-bao_cxpaa8.png",
@@ -163,7 +163,7 @@ export const stickers = [
   },
   {
     id: "14",
-    name: "Peking Duck",
+    name: "Lemme see them Peks",
     description: "The crown jewel of the dinner table. Do not show up without booking.",
     price: 3.00,
     image: "https://res.cloudinary.com/dufsumsmb/image/upload/v1777843565/Stickers/peking-duck_oznvbk.png",
@@ -218,7 +218,7 @@ export const stickers = [
   },
   {
     id: "19",
-    name: "Sesame Ball",
+    name: "ZiZi Bou",
     description: "Crispy outside. Chewy inside. Perfectly round. Iconic.",
     price: 2.00,
     image: "https://res.cloudinary.com/dufsumsmb/image/upload/v1777843568/Stickers/sesameball_s7erto.png",
@@ -251,7 +251,7 @@ export const stickers = [
   },
   {
     id: "22",
-    name: "Xiao the Bao",
+    name: "Luna Bao",
     description: "Little dumpling, big personality. Handle with care — they burst.",
     price: 2.00,
     image: "https://res.cloudinary.com/dufsumsmb/image/upload/v1777843571/Stickers/xiao-the-bao_rfbiev.png",
